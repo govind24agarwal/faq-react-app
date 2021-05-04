@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     question: "Do I have to provide my credit card?",
     answer:
@@ -25,3 +25,5 @@ export default [
       "Unicorn vinyl poutine brooklyn, next level direct trade iceland. Shaman copper mug church-key coloring book, whatever poutine normcore fixie cred kickstarter post-ironic street art",
   },
 ];
+
+export default data;

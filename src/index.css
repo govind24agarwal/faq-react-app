@@ -82,3 +82,12 @@ code {
 .question.display {
   padding: 1.5rem 1rem 1.5rem 1.5rem;
 }
+
+@media screen and (max-width: 992px) {
+  .section-center {
+    flex-direction: column;
+  }
+  .faq {
+    max-width: 100%;
+  }
+}
