@@ -21,6 +21,7 @@ code {
 .section-center {
   padding: 1rem;
   width: 90vw;
+  max-width: 65rem;
   margin: 2rem auto;
   background-color: white;
   display: flex;
@@ -44,7 +45,7 @@ code {
 }
 
 .question {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1rem 0 1.5rem;
   font-size: 1rem;
   display: flex;
   margin: 2rem 0.25rem 0 0.25rem;
@@ -54,19 +55,30 @@ code {
 .icon {
   background: transparent;
   cursor: pointer;
+  padding: 0 1rem;
   align-self: flex-start;
 }
 
 .answer {
-  display: none;
   visibility: hidden;
+  height: 0;
+  transform: translateY(-50%);
   padding: 1rem 1rem;
   font-size: 1rem;
   background-color: rgba(199, 182, 214, 0.322);
   justify-content: space-between;
+  /* transition: all 0.15s ease-out; */
+  overflow: hidden;
+  box-shadow: inset 0 0 10px rgb(206, 199, 199);
 }
 
-.display {
-  display: block;
+.answer.display {
   visibility: visible;
+  transform: translateY(0%);
+  height: 100%;
+  transition: all 0.15s ease-out;
+}
+
+.question.display {
+  padding: 1.5rem 1rem 1.5rem 1.5rem;
 }
